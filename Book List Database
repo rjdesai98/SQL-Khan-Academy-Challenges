@@ -1,0 +1,22 @@
+/**Create a table to store your list of books.**/
+
+
+/**Favorite Books:
+A Good Girl's Guide to Murder (5)
+Atomic Habits (3)
+To Kill a Mockingbird (4)
+Harry Potter Series (4)
+Perks of Being a Wallflower (2)
+**/
+
+CREATE TABLE favorite_books (id INTEGER PRIMARY KEY, name TEXT, rating INTEGER);
+
+INSERT INTO favorite_books VALUES (1, "A Good Girl's Guide to Murder", 5);
+
+INSERT INTO favorite_books VALUES (2, "Atomic Habits", 3);
+
+INSERT INTO favorite_books VALUES (3, "To Kill A Mockingbird", 4);
+
+INSERT INTO favorite_books VALUES (4, "Harry Potter Series", 4);
+
+Insert INTO favorite_books VALUES (5, "Perks of Being a Wallflower", 2);
