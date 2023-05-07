@@ -1,0 +1,26 @@
+/**Create your own store! Your store should sell one type of things, like clothing or bikes, whatever you want your store to specialize in. 
+You should have a table for all the items in your store, and at least 5 columns for the kind of data you think you'd need to store. 
+You should sell at least 15 items, and use select statements to order your items by price and show at least one statistic about the items.**/
+
+CREATE TABLE women_clothing (id INTEGER PRIMARY KEY, item TEXT, size TEXT, quantity INTEGER, price INTEGER);
+
+INSERT INTO women_clothing VALUES (1, "Blouse", "Medium", 200, 50.00);
+INSERT INTO women_clothing VALUES (2, "Skirts", "Medium", 150, 65.00);
+INSERT INTO women_clothing VALUES (3, "Pants", "Medium", 190, 45.00);
+INSERT INTO women_clothing VALUES (4, "Jeans", "Medium", 95, 80.00);
+INSERT INTO women_clothing VALUES (5, "Tank Top", "Medium", 230, 25.00);
+INSERT INTO women_clothing VALUES (6, "Bikini Set", "Medium", 120, 35.00);
+INSERT INTO women_clothing VALUES (7, "Workout Set", "Medium", 225, 40.00);
+INSERT INTO women_clothing VALUES (8, "Jumpsuit", "Medium", 145, 70.00);
+INSERT INTO women_clothing VALUES (9, "Romper", "Medium", 145, 60.00);
+INSERT INTO women_clothing VALUES (10, "Dress", "Medium", 230, 44.00);
+INSERT INTO women_clothing VALUES (11, "Sweatpants", "Medium", 215, 45.00);
+INSERT INTO women_clothing VALUES (12, "Shorts", "Medium", 180, 35.00);
+INSERT INTO women_clothing VALUES (13, "Sweatshirts", "Medium", 235, 80.00);
+INSERT INTO women_clothing VALUES (14, "Crewneck", "Medium", 170, 55.00);
+INSERT INTO women_clothing VALUES (15, "Jackets", "Medium", 190, 100.00);
+
+SELECT * FROM women_clothing
+ORDER BY price;
+
+SELECT SUM(quantity) FROM women_clothing; 
