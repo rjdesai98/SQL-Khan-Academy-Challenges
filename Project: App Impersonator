@@ -1,0 +1,27 @@
+/*Think about your favorite apps, and pick one that stores your data- like a game that stores scores, an app that 
+lets you post updates, etc. Now in this project, you're going to imagine that the app stores your data in a SQL database 
+(which is pretty likely!), and write SQL statements that might look like their own SQL.
+
+CREATE a table to store the data.
+INSERT a few example rows in the table.
+Use an UPDATE to emulate what happens when you edit data in the app.
+Use a DELETE to emulate what happens when you delete data in the app.*/
+
+CREATE TABLE airbnb_rooms_in_Chicago (id INTEGER PRIMARY KEY, home_type TEXT, address REAL, price_per_night INTEGER, total_occupancy INTEGER);
+
+INSERT INTO airbnb_rooms_in_Chicago VALUES (1, "Boutique Hotel", "875 Courtney Lane", "135", "2");
+INSERT INTO airbnb_rooms_in_Chicago VALUES (2, "Apartment", "220 Hampton Drive", "155", "2");
+INSERT INTO airbnb_rooms_in_Chicago VALUES (3, "Historic Bungalow", "374 Logan Lane", "345", "7");
+INSERT INTO airbnb_rooms_in_Chicago VALUES (4, "Apartment", "953 Hollow Street", "171", "6"); 
+INSERT INTO airbnb_rooms_in_Chicago VALUES (5, "Condominium", "572 Starship Drive", "335", "5");
+
+
+UPDATE airbnb_rooms_in_Chicago SET price_per_night = 133
+WHERE id = 1;
+
+SELECT * FROM airbnb_rooms_in_Chicago; 
+
+DELETE FROM airbnb_rooms_in_Chicago 
+WHERE id = 4;
+
+SELECT * FROM airbnb_rooms_in_Chicago;
